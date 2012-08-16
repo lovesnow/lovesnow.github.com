@@ -9,7 +9,7 @@
   <meta name="author" content="小邪兽">
 
   
-  <meta name="description" content="Blog Archive About Me C++程序员，在Windows上搞音视频开发4年有余 爱电子产品，爱Google, 爱折腾 喜欢开源的东西, 喜欢读书和思考, 喜欢做一些geek的事情/东西 Recent Posts Included file 'custom/asides/ &hellip;">
+  <meta name="description" content="Blog Archive About Me C++程序员，在Windows上搞音视频开发4年有余 爱电子产品，爱Google, 爱折腾 喜欢开源的东西, 喜欢读书和思考, 喜欢做一些geek的事情/东西 Recent Posts GitHub Repos Status updating... @ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -92,10 +92,37 @@
     
   </ul>
 </section>
-Included file 'custom/asides/category_cloud.html' not found in _includes directory<section>
-  <h1>最新评论</h1>
-  <script type="text/javascript" src="http://shanewfx.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=0&avatar_size=32&excerpt_length=200"></script>
-</section><section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/lovesnow">@lovesnow</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'lovesnow',
+            count: 20,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+<section>
   <h1>Enjoy Site</h1>
   <ul>
     <li>
